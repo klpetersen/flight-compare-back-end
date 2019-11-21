@@ -1,17 +1,17 @@
 class UsersController < ApplicationController
     def index 
-        @users = Search.all 
+        @users = User.all 
         render json:@users
     end 
 
     def show
-        @user = Search.find(params[:id])
+        @user = User.find(params[:id])
         render json:@user
     end
 
     def create
         data = JSON.parse(request.raw_post)
-        @user = Search.create(data)
+        @user = User.create(data)
         render json:@user
     end
 end
