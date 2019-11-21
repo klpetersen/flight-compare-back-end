@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(version: 2019_11_18_205745) do
   create_table "searches", force: :cascade do |t|
     t.integer "user_id"
     t.integer "baggage_fee"
+    t.integer "price"
+    t.string "carrier"
+    t.string "direct"
+    t.string "date"
+    t.string "departCity"
+    t.string "destination"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
