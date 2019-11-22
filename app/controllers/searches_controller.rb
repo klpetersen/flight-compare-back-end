@@ -16,4 +16,9 @@ class SearchesController < ApplicationController
         render json:@search
     end
 
+    def destroy
+        Search.destroy(params[:id])
+        render json: Search.all
+    end
+
 end
