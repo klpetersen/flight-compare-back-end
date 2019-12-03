@@ -6,7 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-User.create(username: 'kayla', password:'123')
-
-Search.create(user_id: 1, baggage_fee: 30)
